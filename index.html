@@ -7,22 +7,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+   
+    <div class="container" id="sectiongame">
         <video autoplay muted loop id="video-background">
             <source src="./images/background.mp4" type="video/mp4">
         </video>
         <div class="game">
-            <button class="box">x</button>
-            <button class="box">x</button>
-            <button class="box">o</button>
-            <button class="box">x</button>
             <button class="box"></button>
-            <button class="box">o</button>
             <button class="box"></button>
-            <button class="box">o</button>
             <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="restart-btn" onclick="display('back')">Reset</button>
         </div>
-        <button class="restart-btn">Restart</button>
     </div>
+    <div class="winpage" id="winningpage">
+        <div class="video-container">
+            <video autoplay muted loop id="video-background1">
+                <source src="./images/background.mp4" type="video/mp4">
+            </video>
+            <div class="center-content">
+                <img src="./images/unicorn.png" id="winning-image" class="icon">
+                <img src="./images/ghost.png" id="draw-image" class="icon">
+                <h1 id="win-message">Congratulations!</h1>
+                <h1 id="draw-message" style="display: none;">It's a Draw!</h1>
+                <button class="start">Restart</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
